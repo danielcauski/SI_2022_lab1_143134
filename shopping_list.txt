@@ -1,5 +1,5 @@
-jabolko
-krusa
-sliva
-domat
-piperka
+jabolko x 2
+krusa x 3
+sliva x 1
+domat x 5
+piperka x 6
