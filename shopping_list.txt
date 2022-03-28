@@ -1,5 +1,6 @@
 jabolko x 2
 krusa x 3
 sliva x 1
-domat x 5
+domat x 15
 piperka x 6
+krastavica x 7
