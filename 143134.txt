@@ -1,0 +1,197 @@
+Daniel@Daniel MINGW64 /d/softversko_lab_2022
+$ git clone https://github.com/danielcauski/SI_2022_lab1_143134.git
+Cloning into 'SI_2022_lab1_143134'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+Со оваа команда го клонирам remote repository локално и истовремено ги поврзувам.
+/
+$ git add shopping_list.txt
+се додава shopping_list.txt во локалниот репозиториум.
+/
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git commit -m "Add 5 items to the shopping list"
+[master eda5ec6] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+Со git commit -m се комитира со порака
+/
+$ git add .
+/
+
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git commit -m "Add quantites to the items"
+[master 43d71f1] Add quantites to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+Во веќе постоечка датотека ги внесувам количините и правам комит.
+
+/
+7.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git checkout -b branch1
+Switched to a new branch 'branch1'
+креирам нова гранка.
+/
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+се вракјам на мастер.
+/
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git checkout -b branch2
+Switched to a new branch 'branch2'
+креирам нова гранка.
+/
+
+8.со секоја команда ги внесувам и логовите
+
+9.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 665 bytes | 133.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/danielcauski/SI_2022_lab1_143134.git
+   5d63bbc..43d71f1  master -> master
+-се синхронизираат локалното репо со remote.
+
+10.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+-се префрламе на branch1.
+
+11.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch1)
+$ git add .
+/
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch1)
+$ git commit -m "Change quantity of item #5"
+[branch1 2453ce9] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-правам промена на датотеката и правам комит.
+
+12.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+-се враќаме на гранката master.
+
+13.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git add .
+/
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git commit -m "Change quantity of item #2"
+[master 550cd61] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+--правам промена на датотеката и правам комит.
+
+14.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 178.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/danielcauski/SI_2022_lab1_143134.git
+   43d71f1..550cd61  master -> master
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git push origin branch1
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 641 bytes | 320.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/danielcauski/SI_2022_lab1_143134/pull/new/branch1
+remote:
+To https://github.com/danielcauski/SI_2022_lab1_143134.git
+ * [new branch]      branch1 -> branch1
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git push origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/danielcauski/SI_2022_lab1_143134/pull/new/branch2
+remote:
+To https://github.com/danielcauski/SI_2022_lab1_143134.git
+ * [new branch]      branch2 -> branch2
+
+--се синхронизираат локалното репо со remote.
+
+15.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+-се префрламе на branch2
+
+16.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch2)
+$ git add .
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch2)
+$ git commit -m "Modify item #4"
+[branch2 b8259cc] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-правиме промена на документот и правиме комит 
+
+17.со секоја команда ги внесувам и логовите
+
+18.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch2)
+$ git add .
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch2)
+$ git commit --amend -m "Modify item #4 and add item #6"
+[branch2 b39b05a] Modify item #4 and add item #6
+ Date: Tue Mar 29 01:07:35 2022 +0200
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+-со ова правам промена и додавам нова ставка во документот
+
+19.со секоја команда ги внесувам и логовите
+
+20.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-правиме merge на branch1 so master
+
+20.Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master)
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+-овој конфликт го решавам рачно
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master|MERGING)
+$ git add .
+
+Daniel@Daniel MINGW64 /d/softversko_lab_2022/SI_2022_lab1_143134 (master|MERGING)
+$ git commit -m "Resolving conflicts"
+[master 530a479] Resolving conflicts
+
+
+
+
+
+
+
+
+
